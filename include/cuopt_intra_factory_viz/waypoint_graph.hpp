@@ -18,8 +18,9 @@ struct Edge {
   int to;
 };
 
-// The 10-node intra-factory graph: node 0 is the depot, 4/5/6 are the
-// pickup/delivery stations, the rest are unlabeled transit junctions.
+// The 11-node intra-factory graph: node 0 is AMR 1's depot (start/return
+// point), node 10 is AMR 2's depot, 4/5/6 are the pickup/delivery stations,
+// the rest are unlabeled transit junctions.
 // Only connectivity is hardcoded here -- edge length is always derived from
 // the two waypoints' coordinates (see is_edge()), never duplicated as a
 // literal, so it can't drift out of sync if a waypoint's position changes.

@@ -18,6 +18,7 @@ const std::vector<Waypoint>& waypoints() {
     {7, 1.0, -2.0, WaypointRole::kTransit},
     {8, 1.0, 0.0, WaypointRole::kTransit},
     {9, 1.0, 2.0, WaypointRole::kTransit},
+    {10, 3.0, 0.0, WaypointRole::kDepot},
   };
   return kWaypoints;
 }
@@ -25,7 +26,7 @@ const std::vector<Waypoint>& waypoints() {
 const std::vector<Edge>& edges() {
   static const std::vector<Edge> kEdges = {
     {0, 2}, {1, 2}, {2, 3}, {1, 4}, {2, 5},
-    {3, 6}, {4, 7}, {5, 8}, {6, 9}, {7, 8}, {8, 9},
+    {3, 6}, {4, 7}, {5, 8}, {6, 9}, {7, 8}, {8, 9}, {8, 10},
   };
   return kEdges;
 }
